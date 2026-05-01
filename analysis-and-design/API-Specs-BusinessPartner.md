@@ -32,7 +32,7 @@ The middleware receives a JSON object with the customer's personal information a
     ]
 }
 
-## 📤 Response Structure (Output)
+### 📤 Response Structure (Output)
 The API provides a standardized response. The inclusion of metadata like `ExecutionId` and `ErrCodigo` ensures full traceability for auditing and error handling.
 
 ### Response Field Definitions
