@@ -17,9 +17,11 @@ To demonstrate my multi-disciplinary approach, this repository is organized into
 - **Languages:** C#, SQL (T-SQL).
 - **Frameworks:** .NET Core / .NET Framework.
 - **ERP Integration:** SAP B1 Service Layer, DI API.
+- **Payment Gateway:** Nuvei API Integration (Credit/Debit Card Processing).
 - **Platforms:** Jelou (WhatsApp Business API), REST/JSON.
 
 ## 🏆 Key Results
 - **Efficiency:** Reduced order entry time by 95%.
 - **Accuracy:** Eliminated 15% of manual errors in customer master data.
+- **Secure Payments**: Integrated Nuvei payment gateway, ensuring PCI-DSS compliance and automated payment reconciliation within SAP B1.
 - **Scalability:** System designed to handle high-volume sales peaks during promotional events.
