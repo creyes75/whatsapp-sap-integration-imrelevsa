@@ -9,8 +9,9 @@ In this phase, I acted as the bridge between the sales department, the finance t
 4.  **BPMN Flowcharts:** Mapped the integration of three distinct platforms (Jelou -> Nuvei -> SAP B1).
 
 ### 🛠 Technical Architecture & API Specifications
--
+
 To support these analytics, I designed a robust middleware with a standardized communication protocol. Each endpoint was built to ensure data integrity and real-time synchronization.
+
 ---
 *Detailed documentation of the integration layers:*
 
@@ -19,6 +20,6 @@ To support these analytics, I designed a robust middleware with a standardized c
 *   **[Inventory ATP (Available-to-Promise)](./analysis-and-design/API-Specs-StockAvailability.md):** Bulk stock validation logic.
 *   **[CRM Integration](./analysis-and-design/API-Specs-BusinessPartner.md):** Customer identification and synchronization.
 *   **[Transactional Core (Order to Invoice)](./analysis-and-design/API-Specs-SalesOrder.md):** The end-to-end sales orchestration flow.
-
+*   [Functional Data Mapping](./analysis-and-design/api-data-mapping-jelou-sap.xlsx): Comprehensive dictionary for SAP BP field validations and defaults.
 
 > **Note:** Documentation includes strategies for handling edge cases like partial payments or connection timeouts during the payment window.
