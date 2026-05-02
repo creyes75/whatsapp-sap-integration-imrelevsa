@@ -31,24 +31,26 @@ The middleware receives a JSON object with the customer's personal information a
         }
     ]
 }
-
+```
 ### 📤 Response Structure (Output)
+
 The API provides a standardized response. The inclusion of metadata like `ExecutionId` and `ErrCodigo` ensures full traceability for auditing and error handling.
 
-### Response Field Definitions
+#### Response Field Definitions
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
 | `App` | String | Originating middleware application name. |
 | `EndPoint` | String | Internal route hit by the request. |
 | `ExecutionId` | GUID | Unique transaction identifier for system logs and audit trails. |
-| `Success` | Boolean | Final result of the operation. `true` if SAP B1 created the record. |
+| `Success` | Boolean | Final result of the operation (true/false). |
 | `ErrCodigo` | Integer | System error code (0 = Success). |
-| `ErrMensaje` | String | Detailed error description from SAP DI API / Service Layer. |
-| `tabla` | Array | Contains the generated SAP object details (CardCode, Addresses, etc.). |
-| `AddressType` | Enum | Internal SAP mapping: `bo_ShipTo` (Shipping) and `bo_BillTo` (Billing). |
+| `ErrMensaje` | String | Detailed error description from SAP. |
+| `tabla` | Array | Contains the generated SAP object details (CardCode, etc.). |
 
-**Response Example (Success):**
+---
+
+#### Response Example (Success)
 ```json
 {
     "App": "API-Middleware-SAP",
